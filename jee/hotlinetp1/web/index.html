@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Support technique</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body bgcolor="#FDF5E6">
+        <h1 align="LEFT">Support technique</h1>
+        
+        <form action="/hotlinetp1/TechSupportServlet" method="POST">
+            <h2 align="LEFT">
+                Prénom : <input type="TEXT" name="prenom"><br>
+            </h2>
+            <h2 align="RIGHT">
+                Nom : <input type="TEXT" name="nom"><br>
+            </h2>
+            <h2 align="LEFT">
+                Email : <input type="TEXT" name="email"><br>
+            </h2>
+            <h2 align="RIGHT">
+                Téléphone : 
+                <input type="PASSWORD" name="telephone"><br>
+            </h2>
+            <h2 align="LEFT">
+                Logiciel : <input type="TEXT" name="logiciel"><br>
+            </h2>                      
+            <h2 align="RIGHT">
+                Système d'exploitation : <input type="TEXT" name="os"><br>
+            </h2>
+            <BR>
+            <h2 align="LEFT">Description du problème</h2>
+            <BR>
+            <textarea name='probleme' rows="4" cols="50"></textarea>
+            <HR><BR>
+            <center>                    
+                <INPUT TYPE="Submit" NAME="submit" VALUE="Soumettre la requête">
+            </center>
+            
+        </form>
+        
+    </body>
+</html>

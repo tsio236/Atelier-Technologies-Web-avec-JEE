@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <HEAD>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <TITLE>Site de maintenance</TITLE>
+    </HEAD>
+    
+    <BODY>
+        <H1>Demande du support technique</H1>
+        <HR><BR>
+        <CENTER>
+            <FORM METHOD=POST ACTION="/hotlinetp3/techSupport.jsp">
+                <TABLE ALIGN="center" WIDTH="100%" CELLSPACING="2" CELLPADDING="2">
+                    <TR>
+                        <TD ALIGN="right">Email :</TD>
+                        <TD><INPUT TYPE="Text" NAME="email" ALIGN="LEFT" SIZE="25"></TD>
+                    </TR>
+                    <TR>
+                        <TD ALIGN="right">Logiciel :</TD>
+                        <TD>
+                            <SELECT NAME="logiciel" SIZE="1">
+                                <OPTION VALUE="Word">Microsoft Word</OPTION>
+                                <OPTION VALUE="Excel">Microsoft Excel</OPTION>
+                                <OPTION VALUE="Access">Microsoft Access</OPTION>
+                                <option value="Ppt">Microsoft PowerPoint</option>
+                            </SELECT>
+                        </TD>
+                        <TD ALIGN="right">Système d'exploitation:</TD>
+                        <TD>
+                            <SELECT NAME="os" size="1">
+                                <OPTION VALUE="Xp">Windows XP</OPTION>
+                                <OPTION VALUE="Linux">Linux</OPTION>
+                                <OPTION VALUE="Mac">Mac OS</OPTION>
+                            </SELECT>
+                        </TD>
+                    </TR>
+                </TABLE>
+                <BR>Description du problème
+                <BR>
+                <TEXTAREA NAME="probleme" COLS="50" ROWS="10"></TEXTAREA>
+                <HR><BR>
+                <INPUT TYPE="Submit" NAME="submit" VALUE="Soumettre la requête">
+            </FORM>
+        </CENTER>
+    </body>
+</html>
